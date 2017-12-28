@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/* line 1, ../sass/myvenice.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 5, ../sass/myvenice.scss */
+body {
+  font-family: "微软雅黑";
+  padding: 38px 0 94px;
+  background: #2e2e2e;
+}
+/* line 9, ../sass/myvenice.scss */
+body ul {
+  list-style: none;
+}
+@-webkit-keyframes translater {
+  0% {
+    transform: translateX(1500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes translatel {
+  0% {
+    transform: translateX(-1500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes scale {
+  0% {
+    transform: scale(1);
+    box-shadow: 5px 5px 10px #afb692,-5px -5px 10px #afb692;
+    border-radius: 50%;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px #3f9154,-5px -5px 10px #3f9154;
+    border-radius: 30%;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 5px 5px 10px #fec16c,-5px -5px 10px #fec16c;
+    border-radius: 10%;
+  }
+}
+/* line 56, ../sass/myvenice.scss */
+body .wrapper .container .right {
+  -webkit-animation-name: translater;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+}
+/* line 62, ../sass/myvenice.scss */
+body .wrapper .container .left {
+  -webkit-animation-name: translatel;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+}
+/* line 68, ../sass/myvenice.scss */
+body .wrapper .header .logo img:hover, body .wrapper .container .right .picture:hover, body .wrapper .container .left .picture:hover, body .wrapper .footer ul li ul li img:hover {
+  -webkit-animation-name: scale;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+}
+/* line 74, ../sass/myvenice.scss */
+body .wrapper {
+  width: 1098px;
+  background: #f2f2f2;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px #c7b9b9;
+  overflow: hidden;
+  height: 8230px;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+}
+/* line 86, ../sass/myvenice.scss */
+body .wrapper .header {
+  height: 190px;
+  padding: 0 78px;
+  overflow: hidden;
+}
+/* line 90, ../sass/myvenice.scss */
+body .wrapper .header .logo {
+  float: left;
+  padding-top: 64px;
+}
+/* line 93, ../sass/myvenice.scss */
+body .wrapper .header .logo img {
+  width: 277px;
+  height: 85px;
+}
+/* line 101, ../sass/myvenice.scss */
+body .wrapper .header .nav {
+  float: right;
+  padding-top: 105px;
+  line-height: 31px;
+}
+/* line 105, ../sass/myvenice.scss */
+body .wrapper .header .nav a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #808080;
+  text-shadow: 1px 1px 1px #809bb9,0 0 2px #f2b99b;
+  padding-right: 5px;
+  display: inline-block;
+  transition: all 0.53s linear;
+}
+/* line 113, ../sass/myvenice.scss */
+body .wrapper .header .nav a:hover {
+  transition: all 0.53s linear;
+  transform: scale(1.1);
+  color: #fec16c;
+  text-shadow: 1px 1px 1px #3e1e0f,0 0 2px #d9042c;
+}
+/* line 120, ../sass/myvenice.scss */
+body .wrapper .header .nav span {
+  display: inline-block;
+  width: 34px;
+  height: 32px;
+  margin-left: 20px;
+  background: url("../img/search.png") no-repeat;
+  vertical-align: middle;
+  transition: all 0.53s linear;
+}
+/* line 128, ../sass/myvenice.scss */
+body .wrapper .header .nav span:hover {
+  transition: all 0.53s linear;
+  transform: scale(1.4);
+}
+/* line 136, ../sass/myvenice.scss */
+body .wrapper .container .right, body .wrapper .container .left {
+  width: 1020px;
+  height: 400px;
+  background-color: #3c424b;
+  margin-bottom: 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  line-height: 1;
+}
+/* line 145, ../sass/myvenice.scss */
+body .wrapper .container .right .text, body .wrapper .container .left .text {
+  width: 300px;
+  padding: 57px 0 0 30px;
+  overflow: hidden;
+}
+/* line 149, ../sass/myvenice.scss */
+body .wrapper .container .right .text h2, body .wrapper .container .left .text h2 {
+  font-size: 25px;
+  font-weight: normal;
+}
+/* line 153, ../sass/myvenice.scss */
+body .wrapper .container .right .text p, body .wrapper .container .left .text p {
+  font-size: 12px;
+  padding-top: 82px;
+}
+/* line 158, ../sass/myvenice.scss */
+body .wrapper .container .right .picture, body .wrapper .container .left .picture {
+  overflow: hidden;
+}
+/* line 163, ../sass/myvenice.scss */
+body .wrapper .container .right .picture img, body .wrapper .container .left .picture img {
+  width: 720px;
+  height: 400px;
+}
+/* line 169, ../sass/myvenice.scss */
+body .wrapper .container .right {
+  margin-left: 78px;
+  border-radius: 15px 0 0 15px;
+}
+/* line 175, ../sass/myvenice.scss */
+body .wrapper .container .right .text h1 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 62px;
+}
+/* line 180, ../sass/myvenice.scss */
+body .wrapper .container .right .text ul {
+  list-style: none;
+  font-size: 12px;
+  padding-bottom: 15px;
+  color: #ffcc00;
+}
+/* line 185, ../sass/myvenice.scss */
+body .wrapper .container .right .text ul li {
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+/* line 192, ../sass/myvenice.scss */
+body .wrapper .container .left {
+  border-radius: 0 15px 15px 0;
+}
+/* line 194, ../sass/myvenice.scss */
+body .wrapper .container .left:nth-child(2) .text {
+  background: url("../img/code.png") no-repeat 30px 132px;
+}
+/* line 204, ../sass/myvenice.scss */
+body .wrapper .footer {
+  padding: 90px 0 0 100px;
+  height: auto;
+}
+/* line 209, ../sass/myvenice.scss */
+body .wrapper .footer ul li ul {
+  display: flex;
+  flex-direction: row;
+}
